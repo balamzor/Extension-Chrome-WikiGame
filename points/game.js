@@ -11,8 +11,6 @@ reset.style.cssText =
   'position: fixed; right: 20px; top: 60px; font-size: 15px; background-color: #000; color: #fff; border-radius: 10px; width: 50px; height: 30px; border: 3px solid #fff; display: flex; justify-content: center; align-items: center; font-weight: bold; font-family: sans-serif; cursor: pointer;';
 document.body.appendChild(reset);
 
-let links = document.getElementsByTagName('link');
-
 document.addEventListener('click', (event) => {
   if (event.target.tagName === 'A') {
     let storage = localStorage.getItem('count');

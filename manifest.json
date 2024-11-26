@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "WikiGame",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "/popup/menu.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["./points/game.js"]
+    }
+  ]
+}

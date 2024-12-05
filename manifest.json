@@ -3,9 +3,15 @@
   "name": "WikiGame",
   "description": "Base Level Extension",
   "version": "1.0",
+  "permissions": ["storage"],
   "action": {
     "default_popup": "/popup/menu.html"
   },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
   "content_scripts": [
     {
       "matches": ["https://*.wikipedia.org/*"],
